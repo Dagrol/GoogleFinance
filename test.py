@@ -10,8 +10,8 @@ def fetchPreMarket(symbol, exchange):
     data = json.loads(content[3:])
     info = data[0]
     t = str(info["lt"])
-    l = float(info["l"])
-    p = float(info["l_fix"])
+    l = float(info["pcls_fix"])
+    p = float(info["l"])
     return (t,l,p)
  
  
